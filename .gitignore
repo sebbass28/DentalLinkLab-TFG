@@ -32,3 +32,13 @@ frontend/node_modules/
 
 # Local copies
 copia/
+
+# --- Seguridad: nunca versionar secretos ni artefactos ---
+.env*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.sqlite3
+node_modules/
+*.zip
